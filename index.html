@@ -7,14 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Slackey" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
     <title>Psychic Game</title>
 </head>
 
-<body>
+<body style="background-image:url(assets/images/psygameBG.jpg)">
 
-    <div id="game">
-        <p>Guess what letter I'm thinking of...</p>
+    <audio controls autoplay loop>
+        <source src="assets/images/spaceChatter.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>Therman's Psychic Game</h1>
+    </header>
+
+    <p class="guess">Guess what letter I'm thinking of...</p>
+
+    <div class="box">
+        <div id="game"></div>
     </div>
+
+    <footer class="footer">
+        <p>Copyright 2018 &copy;</p>
+    </footer>
 
 </body>
 
