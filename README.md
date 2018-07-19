@@ -6,3 +6,5 @@ In this game you have 9 guesses to figure out which letter Therman is thinking o
 Therman is a character in the movie Dinner for Schmucks played by Zack Galifianakis, displayed here in the page's background image, he is a self described master of mind control. Whether you win or lose, Therman will have something to say about it. Challenge him at your peril.
 
 Background music by Doug Maxwell, "Space Chatter"
+
+https://mattziegel.github.io/Psychic-Game/

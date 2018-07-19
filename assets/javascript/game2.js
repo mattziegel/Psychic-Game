@@ -5,9 +5,12 @@ var losses = 0;
 var guesses = 9;
 var guessLetters = [];
 
+var computerGuess = function (){
+    letters[Math.floor(Math.random() * letters.length)];
+};
+
 document.onkeydown = function (event) {
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
-    var computerGuess = letters[Math.floor(Math.random() * letters.length)];
     guessLetters.push(userGuess);
     
     if (userGuess === computerGuess) {
