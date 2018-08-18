@@ -12,7 +12,7 @@ header {
 
 h1 {
     font-family: 'Slackey', cursive;
-    color:#1fa1bb;
+    color:#2ea3f7;
     font-size:50px;
     text-shadow:1px 1px 4px black;
 }
@@ -24,22 +24,22 @@ h1 {
     position:absolute;
     top:240px;
     font-family: 'Slackey', cursive;
-    color:#1fa1bb;
+    color:#2ea3f7;
     font-size:22px;
     text-shadow:1px 1px 4px black;
 }
 
 p {
     font-family: 'Slackey', cursive;
-    color:#1fa1bb;
+    color:#2ea3f7;
     font-size:18px;
     text-shadow:1px 1px 4px black;
     line-height:30px;
 }
 
-.box {
+#box {
     box-sizing:border-box;
-    border: 5px solid #1fa1bb;
+    border: 5px solid #2ea3f7;
     margin: auto;
     width: 40%;
     padding: 10px;
@@ -47,7 +47,6 @@ p {
     position:relative;
     top:290px;
     box-shadow:5px 5px 10px;
-    
 }
 
 .footer {

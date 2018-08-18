@@ -5,22 +5,37 @@ var losses = 0;
 var guesses = 9;
 var guessLetters = [];
 
+var updateComputerGuess = function(){
+computerGuess = letters[Math.floor(Math.random() * letters.length)];
+console.log("Impossible! You're inside my mind! Then you already know the letter I'm thinking of is " + '"' + computerGuess + '"'); 
+};
+
+updateComputerGuess();
+
+var reset = function() {
+    guesses = 9;
+    guessLetters.length = 0;
+    updateComputerGuess();
+  };
+
+
 document.onkeydown = function (event) {
+    document.getElementById("music").play();
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
-    var computerGuess = letters[Math.floor(Math.random() * letters.length)];
-    guessLetters.push(userGuess);
-    
+
+    guessLetters.push(" " + userGuess);
+    console.log("User Guesses: " + guessLetters)
+
+
     if (userGuess === computerGuess) {
         wins++;
-        guesses = 9;
-        guessLetters.length = 0;
+        reset();
         alert("You have bested me, I release you!")
-    } 
-     
+    }
+
     else if (guesses == 1) {
         losses++;
-        guessLetters.length = 0;
-        guesses = 9;
+        reset();
         alert("Ha! You Lose!")
     }
 
@@ -28,11 +43,6 @@ document.onkeydown = function (event) {
         guesses--;
     }
 
-    // else if (userGuess !== letters.length){
-    //     alert("What?! That's not a letter!");
-    // }
-
-        
     var html =
         "<p>Wins: " + wins + "</p>" +
         "<p>Loses: " + losses + "</p>" +
@@ -40,6 +50,5 @@ document.onkeydown = function (event) {
         "<p>Your Guesses So Far: " + guessLetters + "<p>";
 
     document.querySelector("#game").innerHTML = html;
-
 }
 
